@@ -1,16 +1,13 @@
 /**
- * jQuery Ripples plugin v0.6.2 / https://github.com/sirxemic/jquery.ripples
+ * jQuery Ripples plugin v0.6.2 / https://github.com/kowsar89/jquery.ripples
  * MIT License
  * @author sirxemic / https://sirxemic.com/
  */
 
-(function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('jquery')) :
-	typeof define === 'function' && define.amd ? define(['jquery'], factory) :
-	(factory(global.$));
-}(this, (function ($) { 'use strict';
+(function() {
+'use strict';
 
-$ = $ && 'default' in $ ? $['default'] : $;
+var $ = jQuery;
 
 var gl;
 var $window = $(window); // There is only one window, so why not cache the jQuery-wrapped window?
@@ -896,4 +893,4 @@ $.fn.ripples.noConflict = function() {
 	return this;
 };
 
-})));
+}());
